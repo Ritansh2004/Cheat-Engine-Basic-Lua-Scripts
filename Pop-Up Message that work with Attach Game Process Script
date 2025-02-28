@@ -1,0 +1,22 @@
+^ˇ^ˇPOP-UP MESSAGE THAT WORK WITH ATTACH GAME PROCESS SCRIPT^ˇ^ˇ
+                              .
+                              .
+                              .
+[ENABLE]
+{$lua}
+-- Attach game process script
+local processName = "brave.exe"  				                                                -- Replace "game.exe" with your game's executable name
+if not OpenProcess(processName) then
+  showMessage("Failed to attach to process: " .. processName)
+else
+  showMessage("Hello")						                                                      -- Pop-Up Message
+end
+{$asm}
+// Add your assembly code here, if needed.
+
+[DISABLE]
+{$lua}
+-- Optionally, you can add a message or cleanup logic when disabling the script.
+showMessage("Script disabled.")
+{$asm}
+// Add your assembly code here for disabling, if needed.
