@@ -1,0 +1,25 @@
+^ˇ^ˇDARK MODE OR BACKGROUND COLOR OR CHECKBOX COLOR SCRIPT^ˇ^ˇ
+                            .
+                            .
+                            .
+[ENABLE]
+
+{$LUA}
+if syntaxcheck then return end
+--Colors are BGR in hexdecimal
+--getMainForm().color=0x000000
+--getMainForm().Foundlist3.Color=0x000000
+GetAddressList().Control[0].BackgroundColor=0x000000          --FOR BACKGROUND_COLOR
+AddressList.CheckboxColor=0xFFFFFF		                        --FOR CHECKBOX_COLOR
+{$ASM}
+
+[DISABLE]
+
+{$LUA}
+if syntaxcheck then return end
+--Colors are BGR in hexdecimal
+--getMainForm().color=0xE0E0E0
+--getMainForm().Foundlist3.Color=0xE0E0E0
+GetAddressList().Control[0].BackgroundColor=0xE0E0E0          --FOR BACKGROUND_COLOR
+AddressList.CheckboxColor=0x000000		                        --FOR CHECKBOX_COLOR
+{$ASM}
