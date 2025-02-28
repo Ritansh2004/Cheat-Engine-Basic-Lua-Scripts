@@ -4,3 +4,7 @@
             .
 attachlist=getAutoAttachList()
 stringlist_add(attachlist,".exe");
+            .
+            .
+            .
+NOTE - in ".exe" field, add Game Process Name
