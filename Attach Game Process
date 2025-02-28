@@ -4,6 +4,12 @@
             .
 attachlist=getAutoAttachList()
 stringlist_add(attachlist,".exe");
+            OR
+[ENABLE]
+{$lua}
+OpenProcess(".exe")
+{$asm}
+[DISABLE]
             .
             .
             .
