@@ -1,0 +1,5 @@
+^ˇ^ˇMENU BAR NAME SET SCRIPT^ˇ^ˇ
+              .
+              .
+              .
+getMainForm().caption = "GAME_NAME  ^ˇ^ˇCreated By DANGER DASH ^ˇ^ˇ"
