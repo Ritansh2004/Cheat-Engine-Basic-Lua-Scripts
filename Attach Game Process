@@ -1,0 +1,6 @@
+^ˇ^ˇATTACH GAME PROCESS^ˇ^ˇ
+            .
+            .
+            .
+attachlist=getAutoAttachList()
+stringlist_add(attachlist,".exe");
