@@ -5,7 +5,7 @@
 [ENABLE]
 {$lua}
 -- Attach game process script
-local processName = "brave.exe"  				                                                -- Replace "game.exe" with your game's executable name
+local processName = "POCESS_NAME.exe"  				                                                -- Replace "PROCESS_NAME.exe" with your game's executable name
 if not OpenProcess(processName) then
   showMessage("Failed to attach to process: " .. processName)
 else
