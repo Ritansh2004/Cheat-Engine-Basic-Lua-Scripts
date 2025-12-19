@@ -1,0 +1,33 @@
+^ˇ^ˇATTACH GAME PROCESS & INITIALIZE MONO^ˇ^ˇ
+            .
+            .
+            .
+[ENABLE]
+
+{$lua}
+OpenProcess("GAME_PROCESS.exe")
+{$asm}
+
+{$lua}
+if syntaxcheck then return end
+if process and readInteger(process) ~= 0 then
+    mono_initialize()
+    LaunchMonoDataCollector()
+    beep()                                                     --For Sound
+else
+    local msg = 'Please Attach to the Game First!'
+    print(msg)
+    error(msg)
+    beep(msg)
+    showMessage('Mono Initialize Failed!')                     --Pop Up Message
+end
+{$asm}
+
+[DISABLE]
+{$lua}
+showMessage('Table Disabled!')
+{$asm}
+            .
+            .
+            .
+NOTE - in ".exe" field, add Game Process Name
